@@ -3,14 +3,15 @@
   "main": "index.js",
   "version": "1.0.0",
   "scripts": {
-    "dev": "expo start -c",
-    "dev:web": "expo start -c --web",
-    "dev:android": "expo start -c --android",
-    "android": "expo start -c --android",
-    "ios": "expo start -c --ios",
-    "web": "expo start -c --web",
-    "clean": "rm -rf .expo node_modules",
-    "postinstall": "npx tailwindcss -i ./global.css -o ./node_modules/.cache/nativewind/global.css"
+  "dev": "expo start -c",
+  "dev:web": "expo start -c --web",
+  "dev:android": "expo start -c --android",
+  "android": "expo start -c --android",
+  "ios": "expo start -c --ios",
+  "web": "expo start -c --web",
+  "clean": "rm -rf .expo node_modules",
+  "postinstall": "npx tailwindcss -i ./global.css -o ./node_modules/.cache/nativewind/global.css",
+  "build": "expo export --platform web --output-dir web-build"
   },
   "dependencies": {
     "@react-navigation/drawer": "^7.3.8",
